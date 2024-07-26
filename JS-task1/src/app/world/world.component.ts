@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-world',
@@ -7,10 +7,16 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./world.component.css']
 })
 
-export class WorldComponent {
-  countryData: any = null; // Initialize country data to null
-  constructor(private http: HttpClient) {
-  }
+export class WorldComponent implements OnInit{
+  @Input() countryId!: string;
+  @Input() countryIncome!: string;
+  @Input() countryCapital!: string;
+  @Input() countryLongitude!: string;
+  @Input() countryLatitude!: string;
+  @Input() countryRegion!: string;
 
+  constructor() { }
+
+  ngOnInit(): void { }
 }
 
