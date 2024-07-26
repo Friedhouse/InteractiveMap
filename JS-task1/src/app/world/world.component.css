@@ -36,9 +36,19 @@ nav ul li a:hover {
     display: flex;
 }
 
-.column {
-    flex: 80%;
+.column-map {
+    flex: 70%;
     padding: 10px;
+}
+
+.column-data {
+    flex: 30%;
+    padding: 10;
+    display: block;
+    background-color: #949494;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .header {
@@ -54,4 +64,23 @@ nav input[type=text] {
     margin-right: 16px;
     font-size: 17px;
     border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    padding: 50px;
+}
+
+td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+tr { 
+    background-color:#72A0C1;
 }

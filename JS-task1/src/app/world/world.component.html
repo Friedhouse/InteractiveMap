@@ -10,7 +10,8 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="world.component.html">Home</a></li>
+            <li><a href="world.component.html">World</a></li>
             <input type="text" placeholder="Search.."/>
         </ul>
     </nav>
@@ -21,11 +22,37 @@
     </section>
 
     <div class="row">
-        <div class="column">
-            <h1>Map here</h1>
+        <div class="column-map">
+            <img src="https://innovsandbox.space/map-image.svg" alt="world map SVG" />
         </div>
-        <div class="column">
-            <h1>Description</h1>
+        <div class="column-data">
+            <h1>Country Data</h1>
+            <Table *ngIf="countryData">
+                <tr>
+                    <td>Name:</td>
+                    <td>{{ countryData.name }}</td> 
+                </tr>
+                <tr>
+                    <td>Region:</td>
+                    <td>{{ countryData.region }}></td>
+                </tr>
+                <tr>
+                    <td>Captial:</td>
+                    <td>{{ countryData.capitalCity }}</td>
+                </tr>
+                <tr>
+                    <td>Income Level:</td>
+                    <td>{{ countryData.incomeLevel }}</td>
+                </tr>
+                <tr>
+                    <td>Longitude:</td>
+                    <td>{{ countryData.longitude }}</td>
+                </tr>
+                <tr>
+                    <td>Latitude:</td>
+                    <td>{{ countryData.latitude }}</td>
+                </tr>
+            </Table>
         </div>
     </div>
 

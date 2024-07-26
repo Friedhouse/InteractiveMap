@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-world',
-  standalone: true,
-  imports: [],
   templateUrl: './world.component.html',
-  styleUrl: './world.component.css'
+  styleUrls: ['./world.component.css']
 })
+
 export class WorldComponent {
+  countryData: any = null; // Initialize country data to null
+  constructor(private http: HttpClient) {
+  }
 
 }
+
