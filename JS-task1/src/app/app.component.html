@@ -1,19 +1,23 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<app-world></app-world>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+<app-header></app-header>
+<div class="container"> 
+  <div class="left-column">
+    <app-map
+      (svgIdSelected)="selectedSvgId = $event"
+      (incomeSelected)="selectedIncome = $event"
+      (capitalSelected)="selectedCapital = $event"
+      (longitudeSelected)="selectedLongitude = $event"
+      (latitudeSelected)="selectedLatitude = $event"
+      (regionSelected)="selectedRegion = $event">
+    </app-map>
+  </div>
+  <div class="right-column">
+    <app-map-info
+      [countryId]="selectedSvgId"
+      [countryIncome]="selectedIncome"
+      [countryCapital]="selectedCapital"
+      [countryLongitude]="selectedLongitude"
+      [countryLatitude]="selectedLatitude"
+      [countryRegion]="selectedRegion">
+    </app-map-info>
+  </div>
+<router-outlet></router-outlet>
