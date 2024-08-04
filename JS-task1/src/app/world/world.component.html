@@ -1,61 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Map</title>
-    <link rel="stylesheet" href="world.component.css"/>  
-</head>
-<body>
-
-    <nav>
-        <ul>
-            <li><a href="world.component.html">Home</a></li>
-            <li><a href="world.component.html">World</a></li>
-            <input type="text" placeholder="Search.."/>
-        </ul>
-    </nav>
-
-    <section class="header">
-        <h1>D280 performance assessment</h1>
-        <p>This is an interactive world map created with HTML and Angular.</p>
-    </section>
-
-    <div class="row">
-        <div class="column-map">
-            <img src="https://innovsandbox.space/map-image.svg" alt="world map SVG" />
-        </div>
-        <div class="column-data">
-            <h1>Country Data</h1>
-            <Table *ngIf="countryData">
-                <tr>
-                    <td>Name:</td>
-                    <td>{{ countryId }}</td> 
-                </tr>
-                <tr>
-                    <td>Region:</td>
-                    <td>{{ countryRegion }}></td>
-                </tr>
-                <tr>
-                    <td>Captial:</td>
-                    <td>{{ countryCapital }}</td>
-                </tr>
-                <tr>
-                    <td>Income Level:</td>
-                    <td>{{ countryIncome }}</td>
-                </tr>
-                <tr>
-                    <td>Longitude:</td>
-                    <td>{{ countryLongitude }}</td>
-                </tr>
-                <tr>
-                    <td>Latitude:</td>
-                    <td>{{ countryLatitude }}</td>
-                </tr>
-            </Table>
-        </div>
-    </div>
-
-</body>
-</html>
-
+<div>
+    <h2>{{ countryId }}</h2>
+    <p>Income: {{ countryIncome }}</p>
+    <p>Capital: {{ countryCapital }}</p>
+    <p>Longitude: {{ countryLongitude }}</p>
+    <p>Latitude: {{ countryLatitude }}</p>
+    <p>Region: {{ countryRegion }}</p>
+  </div>
