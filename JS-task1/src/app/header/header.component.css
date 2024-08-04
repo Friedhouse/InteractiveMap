@@ -1,0 +1,45 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+    float:left;
+  }
+  
+  nav ul li a {
+    display:block;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #72A0C1;
+    border-radius: 10px;
+  }
+  .header {
+    text-align: center;
+    padding: 14px;
+  }
+  
+  nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  
+  section {
+    text-align: center;
+  }
