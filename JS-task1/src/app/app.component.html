@@ -1,23 +1,23 @@
 <app-header></app-header>
 <div class="container"> 
   <div class="left-column">
-    <app-map
+    <app-svg-map
       (svgIdSelected)="selectedSvgId = $event"
       (incomeSelected)="selectedIncome = $event"
       (capitalSelected)="selectedCapital = $event"
       (longitudeSelected)="selectedLongitude = $event"
       (latitudeSelected)="selectedLatitude = $event"
       (regionSelected)="selectedRegion = $event">
-    </app-map>
+    </app-svg-map>
   </div>
   <div class="right-column">
-    <app-map-info
+    <app-world
       [countryId]="selectedSvgId"
       [countryIncome]="selectedIncome"
       [countryCapital]="selectedCapital"
       [countryLongitude]="selectedLongitude"
       [countryLatitude]="selectedLatitude"
       [countryRegion]="selectedRegion">
-    </app-map-info>
+    </app-world>
   </div>
 <router-outlet></router-outlet>

@@ -2,8 +2,9 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SvgMapComponent } from './svg-map/svg-map.component';
 import { WorldDataService } from './world-data.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { WorldComponent } from './world/world.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { HeaderComponent } from './header/header.component';
     RouterOutlet, 
     HeaderComponent, 
     SvgMapComponent,
-    HttpClient,
+    WorldComponent,
+    HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
