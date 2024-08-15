@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, inject } from '@angular/core';
+import { Component, OnInit, Input, inject, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { WorldDataService } from '../world-data.service';
 
 @Component({

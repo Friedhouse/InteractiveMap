@@ -1,4 +1,3 @@
-//World data service is the API integration.
 
 import { TestBed } from '@angular/core/testing';
 import { WorldDataService } from './world-data.service';
