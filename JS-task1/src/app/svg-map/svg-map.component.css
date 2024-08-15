@@ -1,0 +1,7 @@
+path {
+    fill: #4949fd;
+    max-width: fit-content;
+  }
+  path:hover {
+    fill: rgb(52, 234, 113);
+  }
